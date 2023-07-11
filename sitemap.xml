@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/first/</loc>
+    <loc>https://mbrc12.github.io/weblog-publish/posts/first/</loc>
     <lastmod>2023-07-11T06:42:52+05:30</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://mbrc12.github.io/weblog-publish/</loc>
     <lastmod>2023-07-11T06:42:52+05:30</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://mbrc12.github.io/weblog-publish/posts/</loc>
     <lastmod>2023-07-11T06:42:52+05:30</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>https://mbrc12.github.io/weblog-publish/about/</loc>
     <lastmod>2023-07-11T06:32:32+05:30</lastmod>
   </url><url>
-    <loc>/archives/</loc>
+    <loc>https://mbrc12.github.io/weblog-publish/archives/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://mbrc12.github.io/weblog-publish/categories/</loc>
   </url><url>
-    <loc>/search/</loc>
+    <loc>https://mbrc12.github.io/weblog-publish/search/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://mbrc12.github.io/weblog-publish/tags/</loc>
   </url>
 </urlset>
