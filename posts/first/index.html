@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>First | Mriganka&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Lets check math $\eta_{\mu\nu}$
+\begin{align} \Pr(X &gt; \mu) &amp; \leq \frac{\mathbf{E} X}{\mu} \end{align}
+Inline code is also as expected.
+import { BG_COLOR, HEIGHT, WIDTH } from &#39;./globals&#39;; // import Main from &#39;./scenes/main&#39;; import { Game, WEBGL } from &#39;phaser&#39;; // import ECSTest from &#39;./scenes/ecstest&#39;; import { PauseScene } from &#39;./scenes/pause&#39;; import { InitScene } from &#39;./scenes/init&#39;; import MainGame from &#39;./scenes/game&#39;; import { NinePatchPlugin } from &#39;@koreez/phaser3-ninepatch&#39;; import { GameOverScene } from &#39;.">
+<meta name="author" content="">
+<link rel="canonical" href="../../posts/first/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.efa0f0fe5aded2fe258e26871faa4add769af70ef2958e9b083a0d6cf88f73ec.css" integrity="sha256-76Dw/lre0v4ljiaHH6pK3Xaa9w7ylY6bCDoNbPiPc&#43;w=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="../../assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="First" />
+<meta property="og:description" content="Lets check math $\eta_{\mu\nu}$
+\begin{align} \Pr(X &gt; \mu) &amp; \leq \frac{\mathbf{E} X}{\mu} \end{align}
+Inline code is also as expected.
+import { BG_COLOR, HEIGHT, WIDTH } from &#39;./globals&#39;; // import Main from &#39;./scenes/main&#39;; import { Game, WEBGL } from &#39;phaser&#39;; // import ECSTest from &#39;./scenes/ecstest&#39;; import { PauseScene } from &#39;./scenes/pause&#39;; import { InitScene } from &#39;./scenes/init&#39;; import MainGame from &#39;./scenes/game&#39;; import { NinePatchPlugin } from &#39;@koreez/phaser3-ninepatch&#39;; import { GameOverScene } from &#39;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/first/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-11T06:42:52+05:30" />
+<meta property="article:modified_time" content="2023-07-11T06:42:52+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="First"/>
+<meta name="twitter:description" content="Lets check math $\eta_{\mu\nu}$
+\begin{align} \Pr(X &gt; \mu) &amp; \leq \frac{\mathbf{E} X}{\mu} \end{align}
+Inline code is also as expected.
+import { BG_COLOR, HEIGHT, WIDTH } from &#39;./globals&#39;; // import Main from &#39;./scenes/main&#39;; import { Game, WEBGL } from &#39;phaser&#39;; // import ECSTest from &#39;./scenes/ecstest&#39;; import { PauseScene } from &#39;./scenes/pause&#39;; import { InitScene } from &#39;./scenes/init&#39;; import MainGame from &#39;./scenes/game&#39;; import { NinePatchPlugin } from &#39;@koreez/phaser3-ninepatch&#39;; import { GameOverScene } from &#39;."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "First",
+      "item": "/posts/first/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "First",
+  "name": "First",
+  "description": "Lets check math $\\eta_{\\mu\\nu}$\n\\begin{align} \\Pr(X \u0026gt; \\mu) \u0026amp; \\leq \\frac{\\mathbf{E} X}{\\mu} \\end{align}\nInline code is also as expected.\nimport { BG_COLOR, HEIGHT, WIDTH } from \u0026#39;./globals\u0026#39;; // import Main from \u0026#39;./scenes/main\u0026#39;; import { Game, WEBGL } from \u0026#39;phaser\u0026#39;; // import ECSTest from \u0026#39;./scenes/ecstest\u0026#39;; import { PauseScene } from \u0026#39;./scenes/pause\u0026#39;; import { InitScene } from \u0026#39;./scenes/init\u0026#39;; import MainGame from \u0026#39;./scenes/game\u0026#39;; import { NinePatchPlugin } from \u0026#39;@koreez/phaser3-ninepatch\u0026#39;; import { GameOverScene } from \u0026#39;.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Lets check math $\\eta_{\\mu\\nu}$\n\\begin{align} \\Pr(X \u003e \\mu) \u0026 \\leq \\frac{\\mathbf{E} X}{\\mu} \\end{align}\nInline code is also as expected.\nimport { BG_COLOR, HEIGHT, WIDTH } from './globals'; // import Main from './scenes/main'; import { Game, WEBGL } from 'phaser'; // import ECSTest from './scenes/ecstest'; import { PauseScene } from './scenes/pause'; import { InitScene } from './scenes/init'; import MainGame from './scenes/game'; import { NinePatchPlugin } from '@koreez/phaser3-ninepatch'; import { GameOverScene } from './scenes/game-over'; // import TiledTest from './scenes/tiled-test'; ///////////////// GAME SETUP //////////////////////// const canvas = document.getElementById('game') as HTMLCanvasElement; const computeZoom = (w: number, h: number, tw: number, th: number) =\u003e Math.min(tw/w, th/h); const config = { type: WEBGL, width: WIDTH, height: HEIGHT, backgroundColor: BG_COLOR, autoCenter: Phaser.Scale.CENTER_VERTICALLY, zoom: computeZoom(WIDTH, HEIGHT, window.innerWidth, window.innerHeight), canvas, scene: [ // TiledTest InitScene, MainGame, PauseScene, GameOverScene ], // antialias: false, pixelArt: true, autoFocus: true, disableContextMenu: true, fps: { target: 60, forceSetTimeOut: true }, plugins: { global: [{ key: 'NinePatchPlugin', plugin: NinePatchPlugin, start: true }], }, // pipeline: { name: 'ShaderFX', pipeline: ShaderFX }, } const game = new Game(config); //// resize event handler window.addEventListener(\"resize\", () =\u003e { const zoom = computeZoom(WIDTH, HEIGHT, window.innerWidth, window.innerHeight); game.scale.setZoom(zoom); }); ",
+  "wordCount" : "189",
+  "inLanguage": "en",
+  "datePublished": "2023-07-11T06:42:52+05:30",
+  "dateModified": "2023-07-11T06:42:52+05:30",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/first/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mriganka's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="" accesskey="h" title="Mriganka&#39;s blog (Alt + H)">Mriganka&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../categories/" title="/categories">
+                    <span>/categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../about/" title="/about">
+                    <span>/about</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        var delimiters = [
+            {left: "$$", right: "$$", display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+            {left: "\\[", right: "\\]", display: true}
+        ]
+
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: delimiters,
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      First<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h1>
+    <div class="post-meta"><span title='2023-07-11 06:42:52 +0530 IST'>July 11, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Lets check math $\eta_{\mu\nu}$</p>
+<p>\begin{align}
+\Pr(X &gt; \mu) &amp; \leq \frac{\mathbf{E} X}{\mu}
+\end{align}</p>
+<p><code>Inline code</code> is also as expected.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">BG_COLOR</span>, <span style="color:#a6e22e">HEIGHT</span>, <span style="color:#a6e22e">WIDTH</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;./globals&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// import Main from &#39;./scenes/main&#39;;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Game</span>, <span style="color:#a6e22e">WEBGL</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// import ECSTest from &#39;./scenes/ecstest&#39;;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">PauseScene</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;./scenes/pause&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">InitScene</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;./scenes/init&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">MainGame</span> <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;./scenes/game&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">NinePatchPlugin</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@koreez/phaser3-ninepatch&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">GameOverScene</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;./scenes/game-over&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// import TiledTest from &#39;./scenes/tiled-test&#39;;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">///////////////// GAME SETUP ////////////////////////
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">canvas</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;game&#39;</span>) <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">HTMLCanvasElement</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">computeZoom</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">w</span>: <span style="color:#66d9ef">number</span>, <span style="color:#a6e22e">h</span>: <span style="color:#66d9ef">number</span>, <span style="color:#a6e22e">tw</span>: <span style="color:#66d9ef">number</span>, <span style="color:#a6e22e">th</span>: <span style="color:#66d9ef">number</span>) <span style="color:#f92672">=&gt;</span> Math.<span style="color:#a6e22e">min</span>(<span style="color:#a6e22e">tw</span><span style="color:#f92672">/</span><span style="color:#a6e22e">w</span>, <span style="color:#a6e22e">th</span><span style="color:#f92672">/</span><span style="color:#a6e22e">h</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">config</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">WEBGL</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">width</span>: <span style="color:#66d9ef">WIDTH</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">height</span>: <span style="color:#66d9ef">HEIGHT</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">backgroundColor</span>: <span style="color:#66d9ef">BG_COLOR</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">autoCenter</span>: <span style="color:#66d9ef">Phaser.Scale.CENTER_VERTICALLY</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">zoom</span>: <span style="color:#66d9ef">computeZoom</span>(<span style="color:#a6e22e">WIDTH</span>, <span style="color:#a6e22e">HEIGHT</span>, window.<span style="color:#a6e22e">innerWidth</span>, window.<span style="color:#a6e22e">innerHeight</span>),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">canvas</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scene</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// TiledTest
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">InitScene</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">MainGame</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">PauseScene</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">GameOverScene</span>
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// antialias: false,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">pixelArt</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">autoFocus</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">disableContextMenu</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fps</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">target</span>: <span style="color:#66d9ef">60</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">forceSetTimeOut</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">global</span><span style="color:#f92672">:</span> [{ <span style="color:#a6e22e">key</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;NinePatchPlugin&#39;</span>, <span style="color:#a6e22e">plugin</span>: <span style="color:#66d9ef">NinePatchPlugin</span>, <span style="color:#a6e22e">start</span>: <span style="color:#66d9ef">true</span> }],
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// pipeline: { name: &#39;ShaderFX&#39;, pipeline: ShaderFX },
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">game</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Game</span>(<span style="color:#a6e22e">config</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//// resize event handler
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, () <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">zoom</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">computeZoom</span>(<span style="color:#a6e22e">WIDTH</span>, <span style="color:#a6e22e">HEIGHT</span>, window.<span style="color:#a6e22e">innerWidth</span>, window.<span style="color:#a6e22e">innerHeight</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">game</span>.<span style="color:#a6e22e">scale</span>.<span style="color:#a6e22e">setZoom</span>(<span style="color:#a6e22e">zoom</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="">Mriganka&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Mriganka&#39;s blog</title>
-    <link>/</link>
-    <description>Recent content on Mriganka&#39;s blog</description>
+    <title>Posts on Mriganka&#39;s blog</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Mriganka&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jul 2023 06:42:52 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jul 2023 06:42:52 +0530</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
       <link>/posts/first/</link>
@@ -18,17 +18,6 @@
 Inline code is also as expected.
 import { BG_COLOR, HEIGHT, WIDTH } from &amp;#39;./globals&amp;#39;; // import Main from &amp;#39;./scenes/main&amp;#39;; import { Game, WEBGL } from &amp;#39;phaser&amp;#39;; // import ECSTest from &amp;#39;./scenes/ecstest&amp;#39;; import { PauseScene } from &amp;#39;./scenes/pause&amp;#39;; import { InitScene } from &amp;#39;./scenes/init&amp;#39;; import MainGame from &amp;#39;./scenes/game&amp;#39;; import { NinePatchPlugin } from &amp;#39;@koreez/phaser3-ninepatch&amp;#39;; import { GameOverScene } from &amp;#39;.</description>
     </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Tue, 11 Jul 2023 06:32:32 +0530</pubDate>
-      
-      <guid>/about/</guid>
-      <description>about</description>
-    </item>
-    
-    
     
   </channel>
 </rss>
